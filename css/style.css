@@ -1,0 +1,87 @@
+*{
+	font-family: Helvetica;
+}
+h1{
+	text-align: center;
+	font-size: 175%;
+	margin-bottom: 40px;
+	color: black;
+}
+.Chicken , .Beef, .Sushi{
+	position: relative;
+	border: 1px solid black;
+	width: 30%;
+	padding: 20px;
+	margin-left: 15px;
+	color: white;
+	box-sizing: border-box;
+	background-color: gray;
+}
+
+div.heading1{
+	position: absolute;
+	top:0;
+	right: 0;
+	border: 1px solid black;
+	padding: 0px 15px 0px 15px;
+	text-align: center;
+	font-size: 125%;
+	color: black;
+	background-color: pink;
+	box-sizing: border-box;
+}
+
+div.heading2{
+	position: absolute;
+	top:0;
+	right: 0;
+	border: 1px solid black;
+	padding: 0px 15px 0px 15px;
+	text-align: center;
+	font-size: 125%;
+	color: black;
+	background-color: red;
+	box-sizing: border-box;
+}
+
+div.heading3{
+	position: absolute;
+	top:0;
+	right: 0;
+	border: 1px solid black;
+	padding: 0px 15px 0px 15px;
+	text-align: center;
+	font-size: 125%;
+	color: black;
+	background-color: yellow;
+	box-sizing: border-box;
+}
+
+/* For desktop devices */
+@media (min-width: 992px){
+	div{
+		float: left;
+	}
+}
+
+/* for tablet devices */
+@media (min-width: 768px) and (max-width: 991px){
+	.Chicken, .Beef{
+		float: left;
+		width: 45%;
+		margin-bottom: 15px;
+	}
+	div.Sushi{
+		clear: both;
+		margin: 15px; 
+		width: 92%;
+	}
+}
+
+/* For mobile devices */
+@media (max-width: 767px){
+	.Chicken, .Beef, .Sushi{
+		margin: 20px;
+		width: 90%;
+	}
+}
